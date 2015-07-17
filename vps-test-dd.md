@@ -9,6 +9,9 @@
 ### Digital Ocean [do]
 - 1 core / 512 MB RAM / 20 GB SSD
 
+### Digital Ocean [do2]
+- 2 core / 2048 MB RAM / 40 GB SSD
+
 ### Vultr [vt]
 - 2 core / 2048 MB RAM / 45 GB SSD
 
@@ -34,6 +37,8 @@ dd if=/dev/zero of=diskbench bs=1M count=1024 conv=fdatasync
 - [do]: `1073741824 bytes (1.1 GB) copied, 2.12969 s, 504 MB/s`
 - [vt]: `1073741824 bytes (1.1 GB) copied, 2.51819 s, 426 MB/s`
 - [sw]: `1073741824 bytes (1.1 GB) copied, 11.288 s, 95.1 MB/s`
+- [do2 1st run]: `1073741824 bytes (1.1 GB) copied, 37.8891 s, 28.3 MB/s` ???
+- [do2 2nd run]: `1073741824 bytes (1.1 GB) copied, 32.7894 s, 32.7 MB/s` ???
 
 ### Read
 
@@ -51,6 +56,7 @@ Uncached
 - [do]: `1073741824 bytes (1.1 GB) copied, 1.06747 s, 1.0 GB/s`
 - [vt]: `1073741824 bytes (1.1 GB) copied, 3.18181 s, 337 MB/s`
 - [sw]: `1073741824 bytes (1.1 GB) copied, 12.1583 s, 88.3 MB/s`
+- [do2]: `1073741824 bytes (1.1 GB) copied, 1.88625 s, 569 MB/s`
 
 Cached
 - [ra]: `1073741824 bytes (1.1 GB) copied, 0.780069 s, 1.4 GB/s`
@@ -58,6 +64,7 @@ Cached
 - [do]: `1073741824 bytes (1.1 GB) copied, 0.957031 s, 1.1 GB/s`
 - [vt]: `1073741824 bytes (1.1 GB) copied, 0.125819 s, 8.5 GB/s`
 - [sw]: `1073741824 bytes (1.1 GB) copied, 1.20416 s, 892 MB/s`
+- [do]: `1073741824 bytes (1.1 GB) copied, 0.215533 s, 5.0 GB/s`
 
 ## CPU performance
 
@@ -70,3 +77,4 @@ dd if=/dev/zero bs=1M count=1024 | md5sum
 - [do]: `1073741824 bytes (1.1 GB) copied, 2.95077 s, 364 MB/s`
 - [vt]: `1073741824 bytes (1.1 GB) copied, 1.80603 s, 595 MB/s`
 - [sw]: `1073741824 bytes (1.1 GB) copied, 6.57509 s, 163 MB/s`
+- [do2]: `1073741824 bytes (1.1 GB) copied, 3.80824 s, 282 MB/s`
