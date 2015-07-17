@@ -1,6 +1,6 @@
 # Testing VPS performance using `unixbench`
 
-### Vultr [vt]
+### Vultr
 - 2 core / 2048 MB RAM / 45 GB SSD
 
 ```
@@ -69,4 +69,41 @@ System Call Overhead                          15000.0    7084549.4   4723.0
                                                                    ========
 System Benchmarks Index Score                                        3001.8
 
+```
+
+### Digital Ocean
+- 1 core / 512 MB RAM / 20 GB SSD
+
+```
+Benchmark Run: Fri Jul 17 2015 07:12:53 - 07:41:04
+1 CPU in system; running 1 parallel copy of tests
+
+Dhrystone 2 using register variables       25960270.6 lps   (10.0 s, 7 samples)
+Double-Precision Whetstone                     3393.9 MWIPS (9.9 s, 7 samples)
+Execl Throughput                               2705.7 lps   (30.0 s, 2 samples)
+File Copy 1024 bufsize 2000 maxblocks        379994.0 KBps  (30.0 s, 2 samples)
+File Copy 256 bufsize 500 maxblocks          102897.7 KBps  (30.0 s, 2 samples)
+File Copy 4096 bufsize 8000 maxblocks       1023008.3 KBps  (30.0 s, 2 samples)
+Pipe Throughput                              623227.2 lps   (10.0 s, 7 samples)
+Pipe-based Context Switching                 149695.7 lps   (10.0 s, 7 samples)
+Process Creation                               8203.4 lps   (30.0 s, 2 samples)
+Shell Scripts (1 concurrent)                   5437.7 lpm   (60.0 s, 2 samples)
+Shell Scripts (8 concurrent)                    701.6 lpm   (60.0 s, 2 samples)
+System Call Overhead                         459888.8 lps   (10.0 s, 7 samples)
+
+System Benchmarks Index Values               BASELINE       RESULT    INDEX
+Dhrystone 2 using register variables         116700.0   25960270.6   2224.5
+Double-Precision Whetstone                       55.0       3393.9    617.1
+Execl Throughput                                 43.0       2705.7    629.2
+File Copy 1024 bufsize 2000 maxblocks          3960.0     379994.0    959.6
+File Copy 256 bufsize 500 maxblocks            1655.0     102897.7    621.7
+File Copy 4096 bufsize 8000 maxblocks          5800.0    1023008.3   1763.8
+Pipe Throughput                               12440.0     623227.2    501.0
+Pipe-based Context Switching                   4000.0     149695.7    374.2
+Process Creation                                126.0       8203.4    651.1
+Shell Scripts (1 concurrent)                     42.4       5437.7   1282.5
+Shell Scripts (8 concurrent)                      6.0        701.6   1169.3
+System Call Overhead                          15000.0     459888.8    306.6
+                                                                   ========
+System Benchmarks Index Score                                         780.4
 ```
