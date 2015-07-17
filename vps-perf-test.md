@@ -1,4 +1,4 @@
-# Testing VPS performance
+# Testing VPS performance using `dd`
 
 ### RunAbove Sandbox [ra]
 - 1 core / 2 GB RAM / 20 GB SSD
@@ -15,7 +15,7 @@
 ### Scaleway [sw]
 - 4 core (ARM) / 2048 MB RAM / 50 GB LSSD
 
-## Using ‘dd’ to benchmark disk read/write performance
+## Disk read/write performance
 
 Init:
 ```sh
@@ -59,7 +59,7 @@ Cached
 - [vt]: `1073741824 bytes (1.1 GB) copied, 0.125819 s, 8.5 GB/s`
 - [sw]: `1073741824 bytes (1.1 GB) copied, 1.20416 s, 892 MB/s`
 
-## Using ‘dd’ to benchmark CPU performance
+## CPU performance
 
 ```sh
 dd if=/dev/zero bs=1M count=1024 | md5sum
