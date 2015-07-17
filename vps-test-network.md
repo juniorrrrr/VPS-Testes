@@ -30,7 +30,19 @@ I/O speed :  11.7 MB/s
 ### EC2 Micro @ São Paulo
 - 1 core / 1 GB RAM / 8 GB
 ```
+CPU model :  Intel(R) Xeon(R) CPU E5-2670 v2 @ 2.50GHz
+Number of cores : 1
+CPU frequency :  2500.048 MHz
+Total amount of ram : 992 MB
+Total amount of swap : 2047 MB
+System uptime :   351 days, 21:51,
+Download speed from CacheFly: 77.4MB/s
+Download speed from Coloat, Atlanta GA: 7.19MB/s
+Download speed from Softlayer, Dallas, TX: 8.09MB/s
+Download speed from Linode, Tokyo, JP: 4.65MB/s
+^C
 ```
+It hangs here :(
 
 ### Digital Ocean @ Amsterdam
 - 1 core / 512 MB RAM / 20 GB SSD

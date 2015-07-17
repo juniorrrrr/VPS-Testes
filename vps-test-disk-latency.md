@@ -1,4 +1,4 @@
-# Testing VPS disk latency with `ioping`
+# ioping . -c 10Testing VPS disk latency with `ioping`
 
 Init:
 ```sh
@@ -27,7 +27,20 @@ min/avg/max/mdev = 381 us / 521 us / 1.2 ms / 239 us
 ### EC2 Micro
 - 1 core / 1 GB RAM / 8 GB
 ```
+4.0 KiB from . (ext4 /dev/disk/by-uuid/eadf02fe-ee58-47f8-88aa-a5b893092f0c): request=1 time=276 us
+4.0 KiB from . (ext4 /dev/disk/by-uuid/eadf02fe-ee58-47f8-88aa-a5b893092f0c): request=2 time=364 us
+4.0 KiB from . (ext4 /dev/disk/by-uuid/eadf02fe-ee58-47f8-88aa-a5b893092f0c): request=3 time=386 us
+4.0 KiB from . (ext4 /dev/disk/by-uuid/eadf02fe-ee58-47f8-88aa-a5b893092f0c): request=4 time=480 us
+4.0 KiB from . (ext4 /dev/disk/by-uuid/eadf02fe-ee58-47f8-88aa-a5b893092f0c): request=5 time=414 us
+4.0 KiB from . (ext4 /dev/disk/by-uuid/eadf02fe-ee58-47f8-88aa-a5b893092f0c): request=6 time=495 us
+4.0 KiB from . (ext4 /dev/disk/by-uuid/eadf02fe-ee58-47f8-88aa-a5b893092f0c): request=7 time=421 us
+4.0 KiB from . (ext4 /dev/disk/by-uuid/eadf02fe-ee58-47f8-88aa-a5b893092f0c): request=8 time=412 us
+4.0 KiB from . (ext4 /dev/disk/by-uuid/eadf02fe-ee58-47f8-88aa-a5b893092f0c): request=9 time=495 us
+4.0 KiB from . (ext4 /dev/disk/by-uuid/eadf02fe-ee58-47f8-88aa-a5b893092f0c): request=10 time=539 us
 
+--- . (ext4 /dev/disk/by-uuid/eadf02fe-ee58-47f8-88aa-a5b893092f0c) ioping statistics ---
+10 requests completed in 9.0 s, 2.3 k iops, 9.1 MiB/s
+min/avg/max/mdev = 276 us / 428 us / 539 us / 73 us
 ```
 
 ### Digital Ocean

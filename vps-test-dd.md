@@ -1,4 +1,4 @@
-# Testing VPS performance using `dd`
+# Using `dd`
 
 ### RunAbove Sandbox [ra]
 - 1 core / 2 GB RAM / 20 GB SSD
