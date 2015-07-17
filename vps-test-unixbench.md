@@ -1,5 +1,13 @@
 # Testing VPS performance using `unixbench`
 
+Init:
+```sh
+wget http://byte-unixbench.googlecode.com/files/UnixBench5.1.3.tgz
+tar zxf ./UnixBench5.1.3.tgz
+cd ./UnixBench
+./Run
+```
+
 ### RunAbove Sandbox
 - 1 core / 2 GB RAM / 20 GB SSD
 
