@@ -1,4 +1,4 @@
-# ioping . -c 10Testing VPS disk latency with `ioping`
+# Testing VPS disk latency with `ioping`
 
 Init:
 ```sh
