@@ -190,7 +190,7 @@ System Benchmarks Index Score                                        1656.3
 ```
 
 
-### Vultr
+### Vultr :clap: :metal:
 - 2 core / 2048 MB RAM / 45 GB SSD
 
 ```

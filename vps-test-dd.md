@@ -37,8 +37,10 @@ dd if=/dev/zero of=diskbench bs=1M count=1024 conv=fdatasync
 - [do]: `1073741824 bytes (1.1 GB) copied, 2.12969 s, 504 MB/s`
 - [vt]: `1073741824 bytes (1.1 GB) copied, 2.51819 s, 426 MB/s`
 - [sw]: `1073741824 bytes (1.1 GB) copied, 11.288 s, 95.1 MB/s`
-- [do2 1st run]: `1073741824 bytes (1.1 GB) copied, 37.8891 s, 28.3 MB/s` ???
-- [do2 2nd run]: `1073741824 bytes (1.1 GB) copied, 32.7894 s, 32.7 MB/s` ???
+- [do2 1st run]: `1073741824 bytes (1.1 GB) copied, 37.8891 s, 28.3 MB/s` :neutral_face:
+- [do2 2nd run]: `1073741824 bytes (1.1 GB) copied, 32.7894 s, 32.7 MB/s` :snail:
+
+Clearly, something wasn't right with this Digital Ocean instance.
 
 ### Read
 
